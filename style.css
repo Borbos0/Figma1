@@ -353,22 +353,15 @@ h1 {
   display: flex;
   width: 123px;
   gap: 18px;
-  /*
-  &_instagram:hover {
-      background: url(img/instagram_hover.svg);
-  }
-
-
-  &_twitter:hover {
-      background: url(img/twitter_hover.svg);
-  }
-
-
-  &_facebook:hover {
-      background: url(img/facebook_hover.svg);
-  }
-
-  */
+}
+.footer__images__instagram:hover {
+  cursor: pointer;
+}
+.footer__images__twitter:hover {
+  cursor: pointer;
+}
+.footer__images__facebook:hover {
+  cursor: pointer;
 }
 .footer__heading {
   font-weight: 500;
@@ -463,15 +456,12 @@ h1 {
   padding-right: calc(50% - 600px);
 }
 
-@keyframes flip-vertical-fwd {
+@keyframes shadow-drop-center {
   0% {
-    transform: translateZ(0) rotateY(0);
-  }
-  50% {
-    transform: translateZ(160px) rotateY(180deg);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    transform: translateZ(0) rotateY(0);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
   }
 }
 .cart__main {
@@ -667,7 +657,7 @@ h1 {
 .cart__form__button:hover {
   background-color: #000;
   color: #FFFFFF;
-  animation: flip-vertical-fwd 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: shadow-drop-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @media (max-width: 1024px) {

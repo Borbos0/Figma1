@@ -385,22 +385,20 @@ h1 {
         display: flex;
         width: 123px;
         gap: 18px;
-        /*
-        &_instagram:hover {
-            background: url(img/instagram_hover.svg);
+
+        &__instagram:hover {
+            cursor: pointer;
         }
 
 
-        &_twitter:hover {
-            background: url(img/twitter_hover.svg);
+        &__twitter:hover {
+            cursor: pointer;
         }
 
-        
-        &_facebook:hover {
-            background: url(img/facebook_hover.svg);
-        }
 
-        */
+        &__facebook:hover {
+            cursor: pointer;
+        }
     }
 
     &__heading {

@@ -1,20 +1,14 @@
-  @keyframes flip-vertical-fwd {
+  @keyframes shadow-drop-center {
       0% {
-          -webkit-transform: translateZ(0) rotateY(0);
-          transform: translateZ(0) rotateY(0);
-      }
-
-      50% {
-          -webkit-transform: translateZ(160px) rotateY(180deg);
-          transform: translateZ(160px) rotateY(180deg);
+          -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
       }
 
       100% {
-          -webkit-transform: translateZ(0) rotateY(0);
-          transform: translateZ(0) rotateY(0);
+          -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
       }
   }
-
 
   .cart {
       &__main {
@@ -223,7 +217,7 @@
               &:hover {
                   background-color: #000;
                   color: $colorText;
-                  animation: flip-vertical-fwd 0.6s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                  animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
               }
           }
       }
